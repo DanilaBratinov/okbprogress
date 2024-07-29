@@ -1,0 +1,44 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page43725349.html
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^menu$ page43726469.html [NC]
+RewriteRule ^menu/$ page43726469.html [NC]
+
+RewriteRule ^colocation$ page43739295.html [NC]
+RewriteRule ^colocation/$ page43739295.html [NC]
+
+RewriteRule ^contacts$ page42416836.html [NC]
+RewriteRule ^contacts/$ page42416836.html [NC]
+
+RewriteRule ^vault$ page43754745.html [NC]
+RewriteRule ^vault/$ page43754745.html [NC]
+
+RewriteRule ^rekvizity$ page43789447.html [NC]
+RewriteRule ^rekvizity/$ page43789447.html [NC]
+
+RewriteRule ^policy$ page43794045.html [NC]
+RewriteRule ^policy/$ page43794045.html [NC]
+
+RewriteRule ^telefoniya$ page52116471.html [NC]
+RewriteRule ^telefoniya/$ page52116471.html [NC]
+
+RewriteRule ^internet$ page52362417.html [NC]
+RewriteRule ^internet/$ page52362417.html [NC]
+
+RewriteRule ^licenses$ page52682647.html [NC]
+RewriteRule ^licenses/$ page52682647.html [NC]
+
+RewriteRule ^sout$ page52684067.html [NC]
+RewriteRule ^sout/$ page52684067.html [NC]
+
+RewriteRule ^thx$ page52691959.html [NC]
+RewriteRule ^thx/$ page52691959.html [NC]
+
+
