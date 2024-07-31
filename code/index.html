@@ -15,7 +15,6 @@
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="x-dns-prefetch-control" content="on">
     <link rel="shortcut icon" href="images/tildafavicon.ico" type="image/x-icon" /><!-- Assets -->
-    <script src="https://neo.tildacdn.com/js/tilda-fallback-1.0.min.js" async charset="utf-8"></script>
     <link rel="stylesheet" href="css/tilda-grid-3.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';" />
     <link rel="stylesheet" href="css/tilda-blocks-page43725349.min.css?t=1722251598" type="text/css" media="all"
         onerror="this.loaderr='y';" />
@@ -26,8 +25,7 @@
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/tilda-forms-1.0.min.css" type="text/css" media="all" onerror="this.loaderr='y';" />
     <link rel="stylesheet" href="css/highlight.min.css" type="text/css" media="all" onerror="this.loaderr='y';" />
-    <script type="text/javascript">TildaFonts = ["429", "431", "433", "435"];</script>
-    <script type="text/javascript" src="js/tilda-fonts.min.js" charset="utf-8" onerror="this.loaderr='y';"></script>
+
     <script nomodule src="js/tilda-polyfill-1.0.min.js" charset="utf-8"></script>
     <script
         type="text/javascript">function t_onReady(func) {
@@ -471,7 +469,7 @@
                         font-size: 16px;
                         font-family: 'FuturaPT', Arial, sans-serif;
                         line-height: 1.55;
-                        font-weight: 500;
+                        font-weight: 600;
                         letter-spacing: 0.5px;
                         border-radius: 30px;
                         background-position: center center;
@@ -567,7 +565,7 @@
                             data-field-leftunits-value="px" data-field-heightunits-value=""
                             data-field-widthunits-value="px" data-field-filewidth-value="1680"
                             data-field-fileheight-value="681" data-field-lazyoff-value="y"><a class='tn-atom'
-                                href="/"><img class='tn-atom__img'
+                                href="index.html"><img class='tn-atom__img'
                                     src='images/tild6331-3166-4266-a439-353633633237__photo.png' alt=''
                                     imgfield='tn_img_1721292231315' /></a></div>
                         <div class='t396__elem tn-elem tn-elem__7753697661721292530101' data-elem-id='1721292530101'
@@ -576,8 +574,8 @@
                             data-field-axisx-value="left" data-field-container-value="grid"
                             data-field-topunits-value="px" data-field-leftunits-value="px"
                             data-field-heightunits-value="px" data-field-widthunits-value="px"
-                            data-field-left-res-960-value="760"><a class='tn-atom'
-                                href="https://client.okbprogress.ru/">Личный кабинет</a></div>
+                            data-field-left-res-960-value="760"><a class='tn-atom' target="_blank"
+                                href="https://client.okbprogress.ru/">Личный кабинет </a></div>
                         <div class='t396__elem tn-elem tn-elem__7753697661721293506962' data-elem-id='1721293506962'
                             data-elem-type='text' data-field-top-value="38" data-field-left-value="810"
                             data-field-width-value="153" data-field-axisy-value="top" data-field-axisx-value="left"
@@ -1128,7 +1126,7 @@
                     <div class="t228__maincontainer ">
                         <div class="t228__padding40px"></div>
                         <div class="t228__leftside">
-                            <div class="t228__leftcontainer"><a href="/" class="t228__imgwrapper"><img
+                            <div class="t228__leftcontainer"><a href="index.html" class="t228__imgwrapper"><img
                                         class="t228__imglogo t228__imglogomobile"
                                         src="images/tild6265-6162-4632-a533-386565336231__photo.png" imgfield="img"
                                         style="max-width: 75px; width: 75px; min-width: 75px; height: auto; display: block;"
@@ -1138,7 +1136,7 @@
                             <nav class="t228__centercontainer">
                                 <ul role="list" class="t228__list t-menu__list t228__list_hidden">
                                     <li class="t228__list_item" style="padding:0 15px 0 0;"><a class="t-menu__link-item"
-                                            href="/" data-menu-submenu-hook="" data-menu-item-number="1">Главная</a>
+                                            href="index.html" data-menu-submenu-hook="" data-menu-item-number="1">Главная</a>
                                     </li>
                                     <li class="t228__list_item" style="padding:0 15px;"><a class="t-menu__link-item"
                                             href="colocation.html" data-menu-submenu-hook=""
@@ -2150,7 +2148,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                                             function buttonPlusHandler() {
                                                                 if (!inputQuantityNode) return;
                                                                 var quantity = parseInt(inputQuantityNode.value, 10);
-                                                                quantity >= 0 ? quantity++ : (quantity = 1);
+                                                                quantity >= 0 ? quantity +=5 : (quantity = 1);
                                                                 inputQuantityNode.value = quantity;
                                                             }
                                                             /* Функция слушателя вынесена, чтобы не создавать дополнительные уровни вложенности */
@@ -2251,11 +2249,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                                     class="t-inputquantity__btn t-inputquantity__btn-minus"
                                                     aria-label="Минус">&ndash;</button><input type="number"
                                                     inputmode="numeric" name="Кол-во IP:" id="input_1721640878895"
-                                                    class="t-input t-inputquantity js-tilda-rule " value="1 "
+                                                    class="t-input t-inputquantity js-tilda-rule " value="4"
                                                     placeholder="1" data-tilda-rule="number"
                                                     style="color:#000000;border:1px solid #003459;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;"><button
                                                     type="button" class="t-inputquantity__btn t-inputquantity__btn-plus"
-                                                    aria-label="Плюс">+</button></div>
+                                                    aria-label="Плюс">+</button>
+                                            </div>
+                                            <label for='input_1721640878895' class="t-input-title t-descr t-descr_md"
+                                            id="field-title_1721640878895" data-redactor-toolbar="no"
+                                            field="li_title__1721640878895" id="available">Доступно для использования: <span id="result">1</span></label>
+
                                             <script>t_onReady(function () {
                                                     function t_input_quantity_init(recid, lid) {
                                                         var rec = document.getElementById('rec' + recid);
@@ -2265,20 +2268,64 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                                             var buttonPlus = input.querySelector('.t-inputquantity__btn-plus');
                                                             var buttonMinus = input.querySelector('.t-inputquantity__btn-minus');
                                                             var inputQuantityNode = input.querySelector('.t-inputquantity');
+                                                            var checkbox = document.getElementById('checkbox');
+                                                            inputQuantityNode.addEventListener('input', function() {
+                                                                var quantity = parseInt(inputQuantityNode.value, 10);
+                                                                if (this.checked) {
+                                                                    document.getElementById("result").innerText = quantity;
+                                                                } else {
+                                                                    document.getElementById("result").innerText = quantity - 3;
+                                                                }
+                                                            })
+                                                            checkbox.addEventListener("change", function() {
+                                                                var quantity = parseInt(inputQuantityNode.value, 10);
+                                                                if (this.checked) {
+                                                                    document.getElementById("result").innerText = quantity;
+                                                                } else {
+                                                                    document.getElementById("result").innerText = quantity - 3;
+                                                                }
+                                                            });
+
                                                             /* Функция слушателя вынесена, чтобы не создавать дополнительные уровни вложенности */
                                                             if (buttonPlus) buttonPlus.addEventListener('click', buttonPlusHandler, false);
                                                             function buttonPlusHandler() {
+                                                                let result = 1;
                                                                 if (!inputQuantityNode) return;
                                                                 var quantity = parseInt(inputQuantityNode.value, 10);
-                                                                quantity >= 0 ? quantity++ : (quantity = 1);
-                                                                inputQuantityNode.value = quantity;
+                                                                if (checkbox.checked) {
+                                                                    if (quantity < 256) {
+                                                                        quantity >= 0 ? quantity *= 2 : (quantity = 1);
+                                                                        inputQuantityNode.value = quantity;
+                                                                        document.getElementById("result").innerText = quantity;
+                                                                    }
+                                                                } else {
+                                                                    quantity > 4 ? quantity = quantity + 0 : (quantity = 4);
+                                                                    if (quantity < 256) {
+                                                                        quantity >= 0 ? quantity = quantity * 2 : (quantity = 1);
+                                                                        inputQuantityNode.value = quantity;
+                                                                        result = quantity - 3;
+                                                                        document.getElementById("result").innerText = result;
+                                                                    }
+                                                                }
                                                             }
+
                                                             /* Функция слушателя вынесена, чтобы не создавать дополнительные уровни вложенности */
                                                             if (buttonMinus) buttonMinus.addEventListener('click', buttonMinusHandler, false);
                                                             function buttonMinusHandler() {
                                                                 if (!inputQuantityNode) return;
+                                                                var result = 1;
                                                                 var quantity = parseInt(inputQuantityNode.value, 10);
-                                                                quantity > 0 ? quantity-- : (quantity = 0);
+                                                                if (quantity > 4) {
+                                                                    if (checkbox.checked) {
+                                                                        quantity /= 2;
+                                                                        inputQuantityNode.value = quantity;
+                                                                        document.getElementById("result").innerText = quantity;
+                                                                    } else {
+                                                                        quantity /= 2;
+                                                                        inputQuantityNode.value = quantity;
+                                                                        document.getElementById("result").innerText = quantity - 3;
+                                                                    }
+                                                            }
                                                                 inputQuantityNode.value = quantity;
                                                             }
                                                             var quantityHiddenSpan = document.createElement('span');
@@ -2299,6 +2346,20 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="t-input-group t-input-group_cb " data-input-lid="1722349158298"
+                                    data-field-type="cb">
+                                    <div class="t-input-block "
+                                        style="border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
+                                        <label class="t-checkbox__control t-text t-text_xs"><input
+                                                type="checkbox" name="Checkbox" value="yes"
+                                                class="t-checkbox js-tilda-rule" id="checkbox">
+                                            <div class="t-checkbox__indicator"></div>Свой маршрутизатор
+                                        </label>
+                                        
+                                        <div class="t-input-error" aria-live="polite" id="error_1722349158298">
+                                        </div>
+                                    </div>
+                                </div>
                                     <div class="t-input-group t-input-group_qn t-input-group_width100 t-input-group_inrow"
                                         data-input-lid="1721640918980" data-field-type="qn"><label
                                             for='input_1721640918980' class="t-input-title t-descr t-descr_md"
@@ -2312,7 +2373,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                                     aria-label="Минус">&ndash;</button><input type="number"
                                                     inputmode="numeric" name="Скорость:" id="input_1721640918980"
                                                     class="t-input t-inputquantity js-tilda-rule " value="100"
-                                                    placeholder="1" data-tilda-rule="number"
+                                                    placeholder="МБит/С" data-tilda-rule="number"
                                                     style="color:#000000;border:1px solid #003459;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;"><button
                                                     type="button" class="t-inputquantity__btn t-inputquantity__btn-plus"
                                                     aria-label="Плюс">+</button></div>
@@ -2328,7 +2389,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                                             /* Функция слушателя вынесена, чтобы не создавать дополнительные уровни вложенности */
                                                             if (buttonPlus) buttonPlus.addEventListener('click', buttonPlusHandler, false);
                                                             function buttonPlusHandler() {
-                                                                if (!inputQuantityNode) return;
+                                                                if (inputQuantityNode) return;
                                                                 var quantity = parseInt(inputQuantityNode.value, 10);
                                                                 quantity >= 0 ? quantity++ : (quantity = 1);
                                                                 inputQuantityNode.value = quantity;
@@ -4566,7 +4627,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                         data-field-width-res-640-value="568" data-field-top-res-960-value="678"
                         data-field-left-res-960-value="6" data-field-height-res-960-value="52"
                         data-field-width-res-960-value="441"><a class='tn-atom'
-                            href="/colocation#services">Подробнее</a></div>
+                            href="colocation.html#services">Подробнее</a></div>
                     <div class='t396__elem tn-elem tn-elem__7062680231707919862634' data-elem-id='1707919862634'
                         data-elem-type='text' data-field-top-value="740" data-field-left-value="-18"
                         data-field-width-value="360" data-field-axisy-value="top" data-field-axisx-value="left"
@@ -9161,16 +9222,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                             data-field-top-res-640-value="193" data-field-left-res-640-value="271"
                             data-field-top-res-960-value="112" data-field-left-res-960-value="670"
                             data-field-width-res-960-value="289">
-                            <div class='tn-atom' field='tn_text_1475147678114'><a href="rekvizity.html"
-                                    style="color: rgb(255, 255, 255);">Реквизиты</a><br><a href="policy.html"
+                            <div class='tn-atom' field='tn_text_1475147678114'><a href="rekvizity.html" target="_blank"
+                                    style="color: rgb(255, 255, 255);">Реквизиты</a><br><a href="policy.html" target="_blank"
                                     style="color: rgb(255, 255, 255);">Политика конфиденциальности</a><br><a
-                                    href="https://okbprogress.ru/files/storage/1553070263.0538.jpg"
+                                    href="files/data//1553070263.0538.jpg"  target="_blank"
                                     style="color: rgb(255, 255, 255);">Заключения СОУТ</a><br><a
-                                    href="https://okbprogress.ru/files/storage/rules_telem.pdf"
+                                    href="files/data/rules_telem.pdf" target="_blank"
                                     style="color: rgb(255, 255, 255);">Правила предоставления телематических
-                                    услуг</a><br><a href="https://okbprogress.ru/files/storage/rules_tel.pdf"
+                                    услуг</a><br><a href="files/data/rules_tel.pdf" target="_blank"
                                     style="color: rgb(255, 255, 255);">Правила предоставления услуг телефонной
-                                    связи</a><br><a href="https://okbprogress.ru/files/storage/rules_data.pdf"
+                                    связи</a><br><a href="files/data/rules_data.pdf"target="_blank"
                                     style="color: rgb(255, 255, 255);">Правила предоставления услуг предече данных</a>
                             </div>
                         </div>
