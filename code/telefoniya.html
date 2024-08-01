@@ -1692,7 +1692,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
         <div id="rec776705163" class="r t-rec" data-animationappear="off" data-record-type="702"><!-- T702 -->
             <div class="t702">
                 <div class="t-popup" data-tooltip-hook="#popup:colocation" role="dialog" aria-modal="true" tabindex="-1"
-                    aria-label="IP-телефония">
+                    aria-label="Телефония">
                     <div class="t-popup__close t-popup__block-close"><button type="button"
                             class="t-popup__close-wrapper t-popup__block-close-button"
                             aria-label="Закрыть диалоговое окно"><svg role="presentation" class="t-popup__close-icon"
@@ -1717,15 +1717,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     <div class="t-popup__container t-width t-width_6">
                         <div class="t702__wrapper">
                             <div class="t702__text-wrapper t-align_center">
-                                <div class="t702__title t-title t-title_xxs" id="popuptitle_776705163">IP-телефония
+                                <div class="t702__title t-title t-title_xxs" id="popuptitle_776705163">Телефония
                                 </div>
                                 <div class="t702__descr t-descr t-descr_xs">Оформите заявку, и мы вышлем вам
                                     коммерческое предложение</div>
                             </div>
-                            <form id="form776705163" name='form776705163' role="form" action='' method='POST'
-                                data-formactiontype="0" data-inputbox=".t-input-group" data-success-url="/thx"
-                                class="t-form js-form-proccess t-form_inputs-total_4 "
-                                data-success-callback="t702_onSuccess"><!-- NO ONE SERVICES CONNECTED -->
+                            <form action='php/tg.php' method='POST' data-formactiontype="2"><input type="hidden">
+                                <input type="hidden" name="form_id" value="Телефония">
                                 <div class="js-successbox t-form__successbox t-text t-text_md" aria-live="polite"
                                     style="display:none;"></div>
                                 <div class="t-form__inputsbox t-form__inputsbox_vertical-form t-form__inputsbox_inrow">
@@ -1735,7 +1733,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             data-redactor-toolbar="no" field="li_title__3237766837680">Ваше имя</label>
                                         <div class="t-input-block "
                                             style="border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
-                                            <input type="text" autocomplete="name" name="Name" id="input_3237766837680"
+                                            <input type="text" autocomplete="name" name="name_id" id="input_3237766837680"
                                                 class="t-input js-tilda-rule " value="" data-tilda-req="1"
                                                 aria-required="true" data-tilda-rule="name"
                                                 aria-describedby="error_3237766837680"
@@ -1751,7 +1749,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             >Ваш email</label>
                                         <div class="t-input-block "
                                             style="border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
-                                            <input type="email" autocomplete="email" name="Email"
+                                            <input type="email" autocomplete="email" name="mail_id"
                                                 id="input_3237766837681" class="t-input js-tilda-rule " value=""
                                                 data-tilda-rule="email" aria-describedby="error_3237766837681"
                                                 style="color:#000000;border:1px solid #003459;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
@@ -1766,7 +1764,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             >Ваш телефон</label>
                                         <div class="t-input-block "
                                             style="border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
-                                            <input type="tel" autocomplete="tel" name="Phone" id="input_3237766837682"
+                                            <input type="tel" autocomplete="tel" name="phone_id" id="input_3237766837682"
                                                 data-phonemask-init="no" data-phonemask-id="776705163"
                                                 data-phonemask-lid="3237766837682" data-phonemask-maskcountry="RU"
                                                 class="t-input js-phonemask-input js-tilda-rule " value=""
@@ -1801,7 +1799,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             >Комментарий</label>
                                         <div class="t-input-block "
                                             style="border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
-                                            <textarea name="Комментарий" id="input_3237766837683"
+                                            <textarea name="comment_id" id="input_3237766837683"
                                                 class="t-input js-tilda-rule "
                                                 placeholder="Опишите вашу задачу как можно конкретнее"
                                                 aria-describedby="error_3237766837683"

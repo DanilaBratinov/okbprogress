@@ -1380,7 +1380,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     opacity: 0.1;
                     background-color: #171717;
                     background-position: 0.000% 4.348%;
-                    background-size: 100.000%;
+                    background-size: cover;
                     background-repeat: no-repeat;
                     border-color: transparent;
                     border-style: solid;
@@ -1724,10 +1724,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                 <div class="t702__descr t-descr t-descr_xs">Оформите заявку, и мы вышлем вам
                                     коммерческое предложение</div>
                             </div>
-                            <form id="form776716749" name='form776716749' role="form" action='' method='POST'
-                                data-formactiontype="2" data-inputbox=".t-input-group" data-success-url="/thx"
-                                class="t-form js-form-proccess t-form_inputs-total_8 "
-                                data-success-callback="t702_onSuccess"><input type="hidden" name="formservices[]"
+                            <form action='php/tg.php' method='POST'
+                                data-formactiontype="2"><input type="hidden" name="formservices[]"
                                     value="9b59595eba5858b7d1e5e6785f599dcc" class="js-formaction-services">
                                 <div class="js-successbox t-form__successbox t-text t-text_md" aria-live="polite"
                                     style="display:none;"></div>
@@ -1738,7 +1736,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             data-redactor-toolbar="no" field="li_title__3237766837680">Ваше имя</label>
                                         <div class="t-input-block "
                                             style="border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
-                                            <input type="text" autocomplete="name" name="Имя:" id="input_3237766837680"
+                                            <input type="text" autocomplete="name" name="name_id" id="input_3237766837680"
                                                 class="t-input js-tilda-rule " value="" data-tilda-req="1"
                                                 aria-required="true" data-tilda-rule="name"
                                                 aria-describedby="error_3237766837680"
@@ -1753,7 +1751,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             data-redactor-toolbar="no" field="li_title__3237766837681">Ваш email</label>
                                         <div class="t-input-block "
                                             style="border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
-                                            <input type="email" autocomplete="email" name="Почта:"
+                                            <input type="email" autocomplete="email" name="mail_id"
                                                 id="input_3237766837681" class="t-input js-tilda-rule " value=""
                                                 data-tilda-rule="email" aria-describedby="error_3237766837681"
                                                 style="color:#000000;border:1px solid #003459;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
@@ -1767,7 +1765,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             data-redactor-toolbar="no" field="li_title__3237766837682">Ваш телефон</label>
                                         <div class="t-input-block "
                                             style="border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
-                                            <input type="tel" autocomplete="tel" name="Телефон:"
+                                            <input type="tel" autocomplete="tel" name="phone_id"
                                                 id="input_3237766837682" data-phonemask-init="no"
                                                 data-phonemask-id="776716749" data-phonemask-lid="3237766837682"
                                                 data-phonemask-maskcountry="RU"
@@ -1803,7 +1801,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             >Комментарий</label>
                                         <div class="t-input-block "
                                             style="border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
-                                            <textarea name="Комментарий" id="input_3237766837683"
+                                            <textarea name="comment_id" id="input_3237766837683"
                                                 class="t-input js-tilda-rule "
                                                 placeholder="Опишите вашу задачу как можно конкретнее"
                                                 aria-describedby="error_3237766837683"
@@ -1824,7 +1822,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             <div class="t-inputquantity__wrapper"><button type="button"
                                                     class="t-inputquantity__btn t-inputquantity__btn-minus"
                                                     aria-label="Минус">&ndash;</button><input type="number"
-                                                    inputmode="numeric" name="Количество юнитов:"
+                                                    inputmode="numeric" name="unit"
                                                     id="input_1721640694652"
                                                     class="t-input t-inputquantity js-tilda-rule " value="1"
                                                     data-tilda-rule="number"
@@ -1885,7 +1883,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             <div class="t-inputquantity__wrapper"><button type="button"
                                                     class="t-inputquantity__btn t-inputquantity__btn-minus"
                                                     aria-label="Минус">&ndash;</button><input type="number"
-                                                    inputmode="numeric" name="Суммарная мощность БП:"
+                                                    inputmode="numeric" name="power"
                                                     id="input_1721640719323"
                                                     class="t-input t-inputquantity js-tilda-rule " value="300"
                                                     placeholder="300" data-tilda-rule="number"
@@ -1906,7 +1904,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                                             function buttonPlusHandler() {
                                                                 if (!inputQuantityNode) return;
                                                                 var quantity = parseInt(inputQuantityNode.value, 10);
-                                                                quantity >= 0 ? quantity++ : (quantity = 1);
+                                                                quantity >= 0 ? quantity+=10 : (quantity = 1);
                                                                 inputQuantityNode.value = quantity;
                                                             }
                                                             /* Функция слушателя вынесена, чтобы не создавать дополнительные уровни вложенности */
@@ -1914,7 +1912,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                                             function buttonMinusHandler() {
                                                                 if (!inputQuantityNode) return;
                                                                 var quantity = parseInt(inputQuantityNode.value, 10);
-                                                                quantity > 0 ? quantity-- : (quantity = 0);
+                                                                quantity > 0 ? quantity-=10 : (quantity = 0);
                                                                 inputQuantityNode.value = quantity;
                                                             }
                                                             var quantityHiddenSpan = document.createElement('span');
@@ -1945,7 +1943,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             <div class="t-inputquantity__wrapper"><button type="button"
                                                     class="t-inputquantity__btn t-inputquantity__btn-minus"
                                                     aria-label="Минус">&ndash;</button><input type="number"
-                                                    inputmode="numeric" name="Кол-во IP:" id="input_1721640878895"
+                                                    inputmode="numeric" name="ip" id="input_1721640878895"
                                                     class="t-input t-inputquantity js-tilda-rule " value="4"
                                                     placeholder="1" data-tilda-rule="number"
                                                     style="color:#000000;border:1px solid #003459;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;"><button
@@ -2046,7 +2044,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                     <div class="t-input-block "
                                         style="border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
                                         <label class="t-checkbox__control t-text t-text_xs"><input
-                                                    type="checkbox" name="Checkbox" value="yes"
+                                                    type="checkbox" name="checkbox_id" value="yes"
                                                     class="t-checkbox js-tilda-rule" id="checkbox">
                                                 <div class="t-checkbox__indicator"></div>Свой маршрутизатор
                                             </label>
@@ -2066,7 +2064,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             <div class="t-inputquantity__wrapper"><button type="button"
                                                     class="t-inputquantity__btn t-inputquantity__btn-minus"
                                                     aria-label="Минус">&ndash;</button><input type="number"
-                                                    inputmode="numeric" name="Скорость:" id="input_1721640918980"
+                                                    inputmode="numeric" name="speed_id" id="input_1721640918980"
                                                     class="t-input t-inputquantity js-tilda-rule " value="100"
                                                     placeholder="1" data-tilda-rule="number"
                                                     style="color:#000000;border:1px solid #003459;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;"><button
@@ -2086,7 +2084,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                                             function buttonPlusHandler() {
                                                                 if (!inputQuantityNode) return;
                                                                 var quantity = parseInt(inputQuantityNode.value, 10);
-                                                                quantity >= 0 ? quantity++ : (quantity = 1);
+                                                                quantity >= 0 ? quantity+=100 : (quantity = 1);
                                                                 inputQuantityNode.value = quantity;
                                                             }
                                                             /* Функция слушателя вынесена, чтобы не создавать дополнительные уровни вложенности */
@@ -2094,7 +2092,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                                             function buttonMinusHandler() {
                                                                 if (!inputQuantityNode) return;
                                                                 var quantity = parseInt(inputQuantityNode.value, 10);
-                                                                quantity > 0 ? quantity-- : (quantity = 0);
+                                                                quantity > 0 ? quantity-=100 : (quantity = 0);
                                                                 inputQuantityNode.value = quantity;
                                                             }
                                                             var quantityHiddenSpan = document.createElement('span');
