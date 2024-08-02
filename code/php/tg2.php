@@ -20,15 +20,9 @@ if (!empty($_POST['g-recaptcha-response'])) {
         $error = true;
 
     }
-
     if ($out->success == true) {
         $error = false;
-    }
-}
-
-
-if (!$error) {
-    $botToken = "7206460578:AAEyMW-uWRX-ZCgzTn1ufqHq5eSULkqbVhU";
+        $botToken = "7206460578:AAEyMW-uWRX-ZCgzTn1ufqHq5eSULkqbVhU";
 
         $botUrl = "https://api.telegram.org/bot" . $botToken . "/sendMessage";
 
@@ -123,30 +117,27 @@ if (!$error) {
 
             $mail->Subject = 'Новая заявка: Tasks';
             $mail->Body = '
-                <h1>Новая заявка</h1>
-                <p>Услуга: ' . $service . '</p>
-                <p>Имя: ' . $name . '</p>
-                <p>Почта: ' . $email . '</p>
-                <p>Телефон: ' . $phone . '</p>
-                <p>Кол-во юнитов: ' . $unit . '</p>
-                <p>Суммарная мощность БП ' . $power . 'Вт' . '</p>
-                <p>Кол-во IP: ' . $ip . '</p>
-                <p>Свой маршрутизатор: ' . $router . '</p>
-                <p>Скорость канала: ' . $speed . 'Мб/с' . '</p>
-                ';
-        
+        <h1>Новая заявка</h1>
+        <p>Услуга: ' . $service . '</p>
+        <p>Имя: ' . $name . '</p>
+        <p>Почта: ' . $email . '</p>
+        <p>Телефон: ' . $phone . '</p>';
 
             $mail->send();
             echo 'Message has been sent';
-            header('Location: ../thx.html');
-
+            header('Location: ../index.html');
 
         } catch (Exception $e) {
             echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }
+    }
 }
 
+
+
 if ($error) {
-    header('Location: ../error.html');
+    echo 'Ошибка заполнения капчи.';
 }
+
+header('Location: mail2.php');
 ?>
