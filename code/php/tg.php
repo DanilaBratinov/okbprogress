@@ -116,15 +116,9 @@ if (!$error) {
 
             $mail->isHTML(true);
 
-            $service = $_POST['Услуга'];
-            $name = $_POST['Имя:'];
-            $email = $_POST['Почта:'];
-            $phone = $_POST['Телефон:'];
-
-            $mail->Subject = 'Новая заявка: Tasks';
+            $mail->Subject = 'Новая заявка:' . $service;
             $mail->Body = '
                 <h1>Новая заявка</h1>
-                <p>Услуга: ' . $service . '</p>
                 <p>Имя: ' . $name . '</p>
                 <p>Почта: ' . $email . '</p>
                 <p>Телефон: ' . $phone . '</p>

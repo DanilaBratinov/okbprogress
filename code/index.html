@@ -1793,13 +1793,31 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                             }
                         }
                     </style>
+                    <script>
+                        function validateForm() {
+                          // Получаем элементы формы
+                          const name = document.getElementById("t-phonemask-script").value;
+                    
+                          // Проверка на пустоту полей
+                          if (name === "") {
+                            alert("Пожалуйста, заполните все поля!");
+                            return false; // Прерываем отправку формы
+                          }
+                    
+                          // Дополнительные проверки (например, на корректность email)
+                          // ... 
+                    
+                          return true; // Если все проверки пройдены, отправляем форму
+                        }
+                      </script>
+                    
                     <div class="t-popup__container t-width t-width_6">
                         <div class="t702__wrapper">
                             <div class="t702__text-wrapper t-align_center">
                                 <div class="t702__title t-title t-title_xxs" id="popuptitle_776683768">Обратная связь
                                 </div>
                             </div>
-                            <form action='php/tg.php' method='POST' data-formactiontype="2"><input type="hidden">
+                            <form action='php/tg.php' method='POST' data-formactiontype="2" onsubmit="return validateForm()"><input type="hidden">
                                 <div class="js-successbox t-form__successbox t-text t-text_md" aria-live="polite"
                                     style="display:none;"></div>
                                 <div class="t-form__inputsbox t-form__inputsbox_vertical-form t-form__inputsbox_inrow">
@@ -1834,7 +1852,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                                 id="input_7468215262380" class="t-input js-tilda-rule " value=""
                                                 data-tilda-req="1" aria-required="true" data-tilda-rule="name"
                                                 aria-describedby="error_7468215262380"
-                                                style="color:#000000;border:1px solid #003459;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
+                                                style="color:#000000;border:1px solid #003459;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;" required>
                                             <div class="t-input-error" aria-live="polite" id="error_7468215262380">
                                             </div>
                                         </div>
@@ -1848,7 +1866,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             <input type="email" autocomplete="email" name="mail_id"
                                                 id="input_7468215262381" class="t-input js-tilda-rule " value=""
                                                 data-tilda-rule="email" aria-describedby="error_7468215262381"
-                                                style="color:#000000;border:1px solid #003459;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
+                                                style="color:#000000;border:1px solid #003459;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;" required>
                                             <div class="t-input-error" aria-live="polite" id="error_7468215262381">
                                             </div>
                                         </div>
@@ -2112,7 +2130,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                             </div>
                             <form action='php/tg.php' method='POST'
                                 data-formactiontype="2"><input type="hidden" name="formservices[]"
-                                    value="9b59595eba5858b7d1e5e6785f599dcc" class="js-formaction-services">
+                                    value="9b59595eba5858b7d1e5e6785f599dcc" class="js-formaction-services" required>
                                 <div class="js-successbox t-form__successbox t-text t-text_md" aria-live="polite"
                                     style="display:none;"></div>
                                 <div class="t-form__inputsbox t-form__inputsbox_vertical-form t-form__inputsbox_inrow">
@@ -2126,7 +2144,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                                 class="t-input js-tilda-rule " value="" data-tilda-req="1"
                                                 aria-required="true" data-tilda-rule="name"
                                                 aria-describedby="error_3237766837680"
-                                                style="color:#000000;border:1px solid #003459;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
+                                                style="color:#000000;border:1px solid #003459;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;" required>
                                             <div class="t-input-error" aria-live="polite" id="error_3237766837680">
                                             </div>
                                         </div>
@@ -2140,7 +2158,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             <input type="email" autocomplete="email" name="mail_id"
                                                 id="input_3237766837681" class="t-input js-tilda-rule " value=""
                                                 data-tilda-rule="email" aria-describedby="error_3237766837681"
-                                                style="color:#000000;border:1px solid #003459;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
+                                                style="color:#000000;border:1px solid #003459;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;" required>
                                             <div class="t-input-error" aria-live="polite" id="error_3237766837681">
                                             </div>
                                         </div>
