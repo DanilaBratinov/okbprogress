@@ -79,15 +79,15 @@ if (!$error) {
 
         $ch = curl_init($botUrl);
         curl_setopt($ch, CURLOPT_POST, 1);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, "chat_id=351661463&text=" . urlencode($telegramMessage) . "&parse_mode=Markdown");
+        curl_setopt($ch, CURLOPT_POSTFIELDS, "chat_id=-4258610788&text=" . urlencode($telegramMessage) . "&parse_mode=Markdown");
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $response = curl_exec($ch);
         curl_close($ch);
 
         if ($response) {
-            echo "Сообщение успешно отправлено в Telegram!";
+            echo "Сообщение успешно отправлено!";
         } else {
-            echo "Ошибка отправки сообщения в Telegram.";
+            echo "Ошибка отправки сообщения";
         }
 
         require 'vendor/autoload.php';
@@ -95,16 +95,17 @@ if (!$error) {
         $mail = new PHPMailer(true);
 
         try {
-            $mail->isSMTP();
-            $mail->Host = 'mail.bratinoff.ru';
+            #$mail->isSMTP();
+            $mail->Host = 'mail.okbprogress.ru';
             $mail->SMTPAuth = true;
-            $mail->Username = 'danila@bratinoff.ru';
+            $mail->Username = 'bd@okbprogress.ru';
             $mail->Password = 'jhqi336917';
-            $mail->SMTPSecure = 'tls';
-            $mail->Port = 587;
 
-            $mail->setFrom('danila@bratinoff.ru');
-            $mail->addAddress('spam@bratinoff.ru');
+            $mail->SMTPSecure = 'ssl';
+            $mail->Port = 465;
+
+            $mail->setFrom('bd@okbprogress.ru');
+            $mail->addAddress('office@okbprogress.ru');
             $mail->CharSet = PHPMailer::CHARSET_UTF8;
             $mail->SMTPOptions = array(
                 'ssl' => array(
@@ -115,10 +116,9 @@ if (!$error) {
             );
 
             $mail->isHTML(true);
-
             $mail->Subject = 'Новая заявка:' . $service;
             $mail->Body = '
-                <h1>Новая заявка</h1>
+                <h1>Форма:' . $form . '</h1>
                 <p>Имя: ' . $name . '</p>
                 <p>Почта: ' . $email . '</p>
                 <p>Телефон: ' . $phone . '</p>
