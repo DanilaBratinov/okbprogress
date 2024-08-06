@@ -2,6 +2,9 @@ version: "3"
 
 services:
   progress_web:
-    build: .
+    image: httpd:latest
+    container_name: progress_web
     ports:
-      - "80:80"
+    - '8085:80'
+    volumes:
+    - ./code:/usr/local/apache2/htdocs
