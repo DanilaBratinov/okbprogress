@@ -1,39 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-	<url>
-		<loc>http://okbprogress.tilda.ws/</loc>
-		<lastmod>2024-08-07T09:49:44+00:00</lastmod>
-	</url>
-	<url>
-		<loc>http://okbprogress.tilda.ws/colocation</loc>
-		<lastmod>2024-08-07T09:49:45+00:00</lastmod>
-	</url>
-	<url>
-		<loc>http://okbprogress.tilda.ws/contacts</loc>
-		<lastmod>2024-08-07T09:49:45+00:00</lastmod>
-	</url>
-	<url>
-		<loc>http://okbprogress.tilda.ws/policy</loc>
-		<lastmod>2024-08-07T09:49:45+00:00</lastmod>
-	</url>
-	<url>
-		<loc>http://okbprogress.tilda.ws/telefoniya</loc>
-		<lastmod>2024-08-07T09:49:45+00:00</lastmod>
-	</url>
-	<url>
-		<loc>http://okbprogress.tilda.ws/internet</loc>
-		<lastmod>2024-08-07T09:49:45+00:00</lastmod>
-	</url>
-	<url>
-		<loc>http://okbprogress.tilda.ws/licenses</loc>
-		<lastmod>2024-08-07T09:49:45+00:00</lastmod>
-	</url>
-	<url>
-		<loc>http://okbprogress.tilda.ws/sout</loc>
-		<lastmod>2024-08-07T09:49:45+00:00</lastmod>
-	</url>
-	<url>
-		<loc>http://okbprogress.tilda.ws/thx</loc>
-		<lastmod>2024-08-07T09:49:45+00:00</lastmod>
-	</url>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://okbprogress.ru/</loc>
+	<lastmod>2024-08-05T12:19:44+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://okbprogress.ru/index.html</loc>
+	<lastmod>2024-08-05T12:19:44+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://okbprogress.ru/files/data/rules_telem.pdf</loc>
+	<lastmod>2024-08-05T12:19:44+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://okbprogress.ru/files/data/rules_tel.pdf</loc>
+	<lastmod>2024-08-05T12:19:44+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://okbprogress.ru/files/data/rules_data.pdf</loc>
+	<lastmod>2024-08-05T12:19:44+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
 </urlset>
