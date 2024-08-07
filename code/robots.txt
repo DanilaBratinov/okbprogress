@@ -1,7 +1,21 @@
-User-agent: *
-Allow: https://okbprogress.ru/
-Allow: https://okbprogress.ru/colocation.html
-Allow: https://okbprogress.ru/internet.html
-Allow: https://okbprogress.ru/telefoniya.html
-Allow: https://okbprogress.ru/contacts.html
-Allow: https://okbprogress.ru/policy.html
+User-Agent: *
+Disallow: /page43726469.html
+Disallow: /menu
+Disallow: /page43754745.html
+Disallow: /vault
+Disallow: /page43789447.html
+Disallow: /rekvizity
+Disallow: /tilda/form*
+Disallow: /tilda/rec*
+Disallow: /tilda/click*
+Disallow: /tilda/scroll*
+Disallow: /tilda/popup*
+Disallow: /tilda/cart*
+Disallow: /tilda/product*
+Disallow: /tilda/event*
+Disallow: /*_escaped_fragment_*
+Disallow:
+
+
+Sitemap: http://okbprogress.tilda.ws/sitemap.xml
+Host: okbprogress.tilda.ws
