@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -49,7 +48,7 @@
             } function t_throttle(fn, threshhold, scope) { return function () { fn.apply(scope || this, arguments); }; } function t396_initialScale(t) { t = document.getElementById("rec" + t); if (t) { t = t.querySelector(".t396__artboard"); if (t) { var e, r = document.documentElement.clientWidth, a = []; if (l = t.getAttribute("data-artboard-screens")) for (var l = l.split(","), i = 0; i < l.length; i++)a[i] = parseInt(l[i], 10); else a = [320, 480, 640, 960, 1200]; for (i = 0; i < a.length; i++) { var o = a[i]; o <= r && (e = o) } var n = "edit" === window.allrecords.getAttribute("data-tilda-mode"), d = "center" === t396_getFieldValue(t, "valign", e, a), u = "grid" === t396_getFieldValue(t, "upscale", e, a), c = t396_getFieldValue(t, "height_vh", e, a), g = t396_getFieldValue(t, "height", e, a), s = !!window.opr && !!window.opr.addons || !!window.opera || -1 !== navigator.userAgent.indexOf(" OPR/"); if (!n && d && !u && !c && g && !s) { for (var _ = parseFloat((r / e).toFixed(3)), f = [t, t.querySelector(".t396__carrier"), t.querySelector(".t396__filter")], i = 0; i < f.length; i++)f[i].style.height = Math.floor(parseInt(g, 10) * _) + "px"; t396_scaleInitial__getElementsToScale(t).forEach(function (t) { t.style.zoom = _ }) } } } } function t396_scaleInitial__getElementsToScale(t) { t = Array.prototype.slice.call(t.querySelectorAll(".t396__elem")); if (!t.length) return []; var e = []; return (t = t.filter(function (t) { t = t.closest('.t396__group[data-group-type-value="physical"]'); return !t || (-1 === e.indexOf(t) && e.push(t), !1) })).concat(e) } function t396_getFieldValue(t, e, r, a) { var l = a[a.length - 1], i = r === l ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + r); if (!i) for (var o = 0; o < a.length; o++) { var n = a[o]; if (!(n <= r) && (i = n === l ? t.getAttribute("data-artboard-" + e) : t.getAttribute("data-artboard-" + e + "-res-" + n))) break } return i }</script>
     <script src="js/jquery-1.10.2.min.js" charset="utf-8" onerror="this.loaderr='y';"></script>
     <script src="js/tilda-scripts-3.0.min.js" charset="utf-8" defer onerror="this.loaderr='y';"></script>
-    <script src="js/tilda-blocks-page43739295.min.js?t=1722251598" charset="utf-8" async
+    <script src="js/tilda-blocks-page43739295.min.js?t=1723024184" charset="utf-8" async
         onerror="this.loaderr='y';"></script>
     <script src="js/tilda-zero-1.1.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
     <script src="js/tilda-popup-1.0.min.js" charset="utf-8" async onerror="this.loaderr='y';"></script>
@@ -84,7 +83,6 @@
 </head>
 
 <body class="t-body" style="margin:0;"><!--allrecords-->
-    <script src="https://www.google.com/recaptcha/api.js"></script>
     <div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node"
         data-tilda-project-id="8603237" data-tilda-page-id="43739295" data-tilda-page-alias="colocation"
         data-tilda-formskey="6cfecd7dc431405f59ec96e568603237" data-tilda-cookie="no" data-tilda-root-zone="com">
@@ -304,7 +302,7 @@
 
                     @media screen and (max-width: 1199px) {
                         #rec775369766 .tn-elem[data-elem-id="1721831203383"] {
-                            left: calc(50% - 480px + 587pxpx);
+                            left: calc(50% - 480px + 577px);
                         }
                     }
 
@@ -603,7 +601,7 @@
                             data-field-width-value="153" data-field-axisy-value="top" data-field-axisx-value="left"
                             data-field-container-value="grid" data-field-topunits-value="px"
                             data-field-leftunits-value="px" data-field-heightunits-value=""
-                            data-field-widthunits-value="px" data-field-left-res-960-value="587px">
+                            data-field-widthunits-value="px" data-field-left-res-960-value="577">
                             <div class='tn-atom' field='tn_text_1721831203383'><a href="tel:74957254112"
                                     style="color: rgb(255, 255, 255);">+7 (495) 725-41-12</a></div>
                         </div>
@@ -1127,7 +1125,7 @@
                     data-bgcolor-rgba="rgba(0,52,89,1)" data-navmarker="nav777327680marker" data-appearoffset=""
                     data-bgopacity-two="" data-menushadow="" data-menushadow-css="" data-bgopacity="1"
                     data-menu-items-align="center" data-menu="yes">
-                    <div class="t228__maincontainer">
+                    <div class="t228__maincontainer ">
                         <div class="t228__padding40px"></div>
                         <div class="t228__leftside">
                             <div class="t228__leftcontainer"><a href="index.html" class="t228__imgwrapper"><img
@@ -1194,7 +1192,6 @@
                         #rec777327680 .t228__imglogo {
                             padding: 20px 0;
                         }
-
                     }
                 </style>
                 <script>window.addEventListener('load', function () {
@@ -1233,7 +1230,6 @@
 filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', endColorstr='#D9003459');
 }</style><![endif]-->
                 <style>
-
                     @supports (overflow:-webkit-marquee) and (justify-content:inherit) {
 
                         #rec777327680 .t-menu__link-item,
@@ -1284,6 +1280,19 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     background-repeat: no-repeat;
                 }
 
+                @media screen and (max-width: 1299px) {
+
+                    #rec775048239 .t396__artboard,
+                    #rec775048239 .t396__filter,
+                    #rec775048239 .t396__carrier {
+                        height: 420px;
+                    }
+
+                    #rec775048239 .t396__carrier {
+                        background-attachment: scroll;
+                    }
+                }
+
                 @media screen and (max-width: 1199px) {
                     #rec775048239 .t396__carrier {
                         background-attachment: scroll;
@@ -1318,8 +1327,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                 #rec775048239 .tn-elem[data-elem-id="1721044516429"] {
                     z-index: 2;
                     top: 0px;
-                    left: calc(50% - 600px + -75px);
-                    width: 1350px;
+                    left: calc(50% - 650px + -32px);
+                    width: 105%;
                     height: 420px;
                 }
 
@@ -1331,10 +1340,23 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     border-style: solid;
                 }
 
+                @media screen and (max-width: 1299px) {
+                    #rec775048239 .tn-elem[data-elem-id="1721044516429"] {
+                        top: 0px;
+                        left: calc(50% - 600px + 6px);
+                        width: 99%;
+                        height: 420px;
+                    }
+
+                    #rec775048239 .tn-elem[data-elem-id="1721044516429"] .tn-atom {
+                        background-position: center center;
+                    }
+                }
+
                 @media screen and (max-width: 1199px) {
                     #rec775048239 .tn-elem[data-elem-id="1721044516429"] {
                         left: calc(50% - 480px + 0px);
-                        width: 960px;
+                        width: 100%;
                     }
                 }
 
@@ -1351,14 +1373,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
 
                 @media screen and (max-width: 639px) {
                     #rec775048239 .tn-elem[data-elem-id="1721044516429"] {
-                        left: calc(50% - 240px + 10px);
+                        left: calc(50% - 240px + 0px);
+                        width: 100%;
                     }
                 }
 
                 @media screen and (max-width: 479px) {
                     #rec775048239 .tn-elem[data-elem-id="1721044516429"] {
                         left: calc(50% - 160px + 3px);
-                        width: 94px;
+                        width: 94%;
                         height: 520px;
                         border-radius: 20px;
                     }
@@ -1371,8 +1394,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                 #rec775048239 .tn-elem[data-elem-id="1721043801447"] {
                     z-index: 3;
                     top: 0px;
-                    left: calc(50% - 600px + -75px);
-                    width: 1350px;
+                    left: calc(50% - 650px + -32px);
+                    width: 105%;
                     height: 420px;
                 }
 
@@ -1380,18 +1403,31 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     border-radius: 35px;
                     opacity: 0.1;
                     background-color: #171717;
-                    background-position: 0.000% 4.348%;
+                    background-position: center center;
                     background-size: cover;
                     background-repeat: no-repeat;
                     border-color: transparent;
                     border-style: solid;
                 }
 
+                @media screen and (max-width: 1299px) {
+                    #rec775048239 .tn-elem[data-elem-id="1721043801447"] {
+                        top: 0px;
+                        left: calc(50% - 600px + 6px);
+                        width: 99%;
+                        height: 420px;
+                    }
+
+                    #rec775048239 .tn-elem[data-elem-id="1721043801447"] .tn-atom {
+                        background-position: center center;
+                    }
+                }
+
                 @media screen and (max-width: 1199px) {
                     #rec775048239 .tn-elem[data-elem-id="1721043801447"] {
                         top: 0px;
                         left: calc(50% - 480px + 0px);
-                        width: 960px;
+                        width: 100%;
                     }
                 }
 
@@ -1409,14 +1445,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
 
                 @media screen and (max-width: 639px) {
                     #rec775048239 .tn-elem[data-elem-id="1721043801447"] {
-                        left: calc(50% - 240px + 10px);
+                        left: calc(50% - 240px + 0px);
+                        width: 100%;
                     }
                 }
 
                 @media screen and (max-width: 479px) {
                     #rec775048239 .tn-elem[data-elem-id="1721043801447"] {
                         left: calc(50% - 160px + 3px);
-                        width: 94px;
+                        width: 94%;
                         height: 520px;
                         border-radius: 20px;
                     }
@@ -1430,7 +1467,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     color: #ffffff;
                     z-index: 4;
                     top: calc(210px - 0px + -97px);
-                    left: calc(50% - 288.5px + -340px);
+                    left: calc(50% - 288.5px + -315px);
                     width: 577px;
                 }
 
@@ -1443,6 +1480,18 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     background-position: center center;
                     border-color: transparent;
                     border-style: solid;
+                }
+
+                @media screen and (max-width: 1299px) {
+                    #rec775048239 .tn-elem[data-elem-id="1721043698414"] {
+                        top: calc(210px - 0px + -97px);
+                        left: calc(50% - 288.5px + -209px);
+                        width: 577px;
+                    }
+
+                    #rec775048239 .tn-elem[data-elem-id="1721043698414"] .tn-atom {
+                        font-size: 51px;
+                    }
                 }
 
                 @media screen and (max-width: 1199px) {
@@ -1497,7 +1546,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     color: #ffffff;
                     z-index: 5;
                     top: calc(210px - 0px + 28px);
-                    left: calc(50% - 379.5px + -250px);
+                    left: calc(50% - 379.5px + -224px);
                     width: 759px;
                 }
 
@@ -1510,6 +1559,18 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     background-position: center center;
                     border-color: transparent;
                     border-style: solid;
+                }
+
+                @media screen and (max-width: 1299px) {
+                    #rec775048239 .tn-elem[data-elem-id="1721043698394"] {
+                        top: calc(210px - 0px + 28px);
+                        left: calc(50% - 379.5px + -118px);
+                        width: 759px;
+                    }
+
+                    #rec775048239 .tn-elem[data-elem-id="1721043698394"] .tn-atom {
+                        font-size: 18px;
+                    }
                 }
 
                 @media screen and (max-width: 1199px) {
@@ -1558,7 +1619,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     text-align: center;
                     z-index: 6;
                     top: 321px;
-                    left: calc(50% - 600px + -30px);
+                    left: calc(50% - 650px + 47px);
                     width: 260px;
                     height: 50px;
                 }
@@ -1582,6 +1643,19 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     #rec775048239 .tn-elem[data-elem-id="1721043698381"] .tn-atom:hover {
                         background-color: #00a8e8;
                         background-image: none;
+                    }
+                }
+
+                @media screen and (max-width: 1299px) {
+                    #rec775048239 .tn-elem[data-elem-id="1721043698381"] {
+                        top: 321px;
+                        left: calc(50% - 600px + 103px);
+                        width: 260px;
+                        height: 50px;
+                    }
+
+                    #rec775048239 .tn-elem[data-elem-id="1721043698381"] .tn-atom {
+                        font-size: 18px;
                     }
                 }
 
@@ -1609,44 +1683,51 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                 }
             </style>
             <div class='t396'>
-                <div class="t396__artboard" data-artboard-recid="775048239" data-artboard-screens="320,480,640,960,1200"
-                    data-artboard-height="420" data-artboard-valign="center" data-artboard-upscale="grid"
-                    data-artboard-height-res-320="520">
+                <div class="t396__artboard" data-artboard-recid="775048239"
+                    data-artboard-screens="320,480,640,960,1200,1300" data-artboard-height="420"
+                    data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="520"
+                    data-artboard-height-res-1200="420">
                     <div class="t396__carrier" data-artboard-recid="775048239"></div>
                     <div class="t396__filter" data-artboard-recid="775048239"></div>
                     <div class='t396__elem tn-elem tn-elem__7750482391721044516429' data-elem-id='1721044516429'
-                        data-elem-type='shape' data-field-top-value="0" data-field-left-value="-75"
-                        data-field-height-value="420" data-field-width-value="1350" data-field-axisy-value="top"
+                        data-elem-type='shape' data-field-top-value="0" data-field-left-value="-32"
+                        data-field-height-value="420" data-field-width-value="105" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
-                        data-field-widthunits-value="px" data-field-left-res-320-value="3"
+                        data-field-widthunits-value="%" data-field-left-res-320-value="3"
                         data-field-height-res-320-value="520" data-field-width-res-320-value="94"
-                        data-field-leftunits-res-320-value="%" data-field-left-res-480-value="10"
-                        data-field-left-res-640-value="2" data-field-width-res-640-value="96"
-                        data-field-container-res-640-value="window" data-field-leftunits-res-640-value="%"
-                        data-field-widthunits-res-640-value="%" data-field-left-res-960-value="0"
-                        data-field-width-res-960-value="960">
+                        data-field-leftunits-res-320-value="%" data-field-left-res-480-value="0"
+                        data-field-width-res-480-value="100" data-field-left-res-640-value="2"
+                        data-field-width-res-640-value="96" data-field-container-res-640-value="window"
+                        data-field-leftunits-res-640-value="%" data-field-widthunits-res-640-value="%"
+                        data-field-left-res-960-value="0" data-field-width-res-960-value="100"
+                        data-field-top-res-1200-value="0" data-field-left-res-1200-value="6"
+                        data-field-height-res-1200-value="420" data-field-width-res-1200-value="99"
+                        data-field-widthunits-res-1200-value="%">
                         <div class='tn-atom'></div>
                     </div>
                     <div class='t396__elem tn-elem tn-elem__7750482391721043801447' data-elem-id='1721043801447'
-                        data-elem-type='shape' data-field-top-value="0" data-field-left-value="-75"
-                        data-field-height-value="420" data-field-width-value="1350" data-field-axisy-value="top"
+                        data-elem-type='shape' data-field-top-value="0" data-field-left-value="-32"
+                        data-field-height-value="420" data-field-width-value="105" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
-                        data-field-widthunits-value="px" data-field-left-res-320-value="3"
+                        data-field-widthunits-value="%" data-field-left-res-320-value="3"
                         data-field-height-res-320-value="520" data-field-width-res-320-value="94"
-                        data-field-leftunits-res-320-value="%" data-field-left-res-480-value="10"
-                        data-field-top-res-640-value="0" data-field-left-res-640-value="2"
-                        data-field-width-res-640-value="96" data-field-container-res-640-value="window"
-                        data-field-leftunits-res-640-value="%" data-field-widthunits-res-640-value="%"
-                        data-field-top-res-960-value="0" data-field-left-res-960-value="0"
-                        data-field-width-res-960-value="960">
+                        data-field-leftunits-res-320-value="%" data-field-left-res-480-value="0"
+                        data-field-width-res-480-value="100" data-field-top-res-640-value="0"
+                        data-field-left-res-640-value="2" data-field-width-res-640-value="96"
+                        data-field-container-res-640-value="window" data-field-leftunits-res-640-value="%"
+                        data-field-widthunits-res-640-value="%" data-field-top-res-960-value="0"
+                        data-field-left-res-960-value="0" data-field-width-res-960-value="100"
+                        data-field-top-res-1200-value="0" data-field-left-res-1200-value="6"
+                        data-field-height-res-1200-value="420" data-field-width-res-1200-value="99"
+                        data-field-widthunits-res-1200-value="%">
                         <div class='tn-atom'
                             style="background-image:url('images/tild6465-6131-4336-b131-613637363331__futuristic-computer-.jpg');">
                         </div>
                     </div>
                     <div class='t396__elem tn-elem tn-elem__7750482391721043698414' data-elem-id='1721043698414'
-                        data-elem-type='text' data-field-top-value="-97" data-field-left-value="-340"
+                        data-elem-type='text' data-field-top-value="-97" data-field-left-value="-315"
                         data-field-width-value="577" data-field-axisy-value="center" data-field-axisx-value="center"
                         data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px"
                         data-field-heightunits-value="" data-field-widthunits-value="px"
@@ -1655,12 +1736,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                         data-field-left-res-480-value="0" data-field-width-res-480-value="460"
                         data-field-top-res-640-value="-112" data-field-left-res-640-value="-11"
                         data-field-width-res-640-value="617" data-field-top-res-960-value="-111"
-                        data-field-left-res-960-value="-98" data-field-width-res-960-value="685">
+                        data-field-left-res-960-value="-98" data-field-width-res-960-value="685"
+                        data-field-top-res-1200-value="-97" data-field-left-res-1200-value="-209"
+                        data-field-width-res-1200-value="577">
                         <h1 class='tn-atom' field='tn_text_1721043698414'>Размещение оборудования в <br><span
                                 style="color: rgb(0, 168, 232);">дата-центрах Прогресс</span></h1>
                     </div>
                     <div class='t396__elem tn-elem tn-elem__7750482391721043698394' data-elem-id='1721043698394'
-                        data-elem-type='text' data-field-top-value="28" data-field-left-value="-250"
+                        data-elem-type='text' data-field-top-value="28" data-field-left-value="-224"
                         data-field-width-value="759" data-field-axisy-value="center" data-field-axisx-value="center"
                         data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px"
                         data-field-heightunits-value="" data-field-widthunits-value="px"
@@ -1669,19 +1752,23 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                         data-field-left-res-480-value="0" data-field-width-res-480-value="420"
                         data-field-top-res-640-value="-2" data-field-left-res-640-value="-29"
                         data-field-width-res-640-value="585" data-field-top-res-960-value="2"
-                        data-field-left-res-960-value="-132" data-field-width-res-960-value="618">
+                        data-field-left-res-960-value="-132" data-field-width-res-960-value="618"
+                        data-field-top-res-1200-value="28" data-field-left-res-1200-value="-118"
+                        data-field-width-res-1200-value="759">
                         <h2 class='tn-atom' field='tn_text_1721043698394'>Освободите место в своем офисе и обеспечьте
                             быструю и безопасную работу с помощью размещения в нашем дата-центре.</h2>
                     </div>
                     <div class='t396__elem tn-elem tn-elem__7750482391721043698381' data-elem-id='1721043698381'
-                        data-elem-type='button' data-field-top-value="321" data-field-left-value="-30"
+                        data-elem-type='button' data-field-top-value="321" data-field-left-value="47"
                         data-field-height-value="50" data-field-width-value="260" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-top-res-320-value="397"
                         data-field-left-res-320-value="8" data-field-width-res-320-value="304"
                         data-field-left-res-640-value="-2" data-field-top-res-960-value="321"
-                        data-field-left-res-960-value="39"><a class='tn-atom' href="#popup:colocation">Оставить
+                        data-field-left-res-960-value="39" data-field-top-res-1200-value="321"
+                        data-field-left-res-1200-value="103" data-field-height-res-1200-value="50"
+                        data-field-width-res-1200-value="260"><a class='tn-atom' href="#popup:colocation">Оставить
                             заявку</a></div>
                 </div>
             </div>
@@ -3161,6 +3248,19 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     background-repeat: no-repeat;
                 }
 
+                @media screen and (max-width: 1299px) {
+
+                    #rec775086638 .t396__artboard,
+                    #rec775086638 .t396__filter,
+                    #rec775086638 .t396__carrier {
+                        height: 260px;
+                    }
+
+                    #rec775086638 .t396__carrier {
+                        background-attachment: scroll;
+                    }
+                }
+
                 @media screen and (max-width: 1199px) {
 
                     #rec775086638 .t396__artboard,
@@ -3175,14 +3275,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                 }
 
                 @media screen and (max-width: 959px) {
-
                     #rec775086638 .t396__carrier {
                         background-attachment: scroll;
                     }
                 }
 
                 @media screen and (max-width: 639px) {
-
                     #rec775086638 .t396__carrier {
                         background-attachment: scroll;
                     }
@@ -3205,7 +3303,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     color: #000000;
                     z-index: 2;
                     top: calc(130px - 0px + -101px);
-                    left: calc(50% - 574px + -62px);
+                    left: calc(50% - 574px + -103px);
                     width: 1148px;
                 }
 
@@ -3218,6 +3316,18 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     background-position: center center;
                     border-color: transparent;
                     border-style: solid;
+                }
+
+                @media screen and (max-width: 1299px) {
+                    #rec775086638 .tn-elem[data-elem-id="1721218464192"] {
+                        top: calc(130px - 0px + -101px);
+                        left: calc(50% - 574px + -22px);
+                        width: 1148px;
+                    }
+
+                    #rec775086638 .tn-elem[data-elem-id="1721218464192"] .tn-atom {
+                        font-size: 30px;
+                    }
                 }
 
                 @media screen and (max-width: 1199px) {
@@ -3272,7 +3382,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     color: #000000;
                     z-index: 3;
                     top: 188px;
-                    left: calc(50% - 600px + -36px);
+                    left: calc(50% - 650px + -27px);
                     width: 1203px;
                 }
 
@@ -3285,6 +3395,18 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     background-position: center center;
                     border-color: transparent;
                     border-style: solid;
+                }
+
+                @media screen and (max-width: 1299px) {
+                    #rec775086638 .tn-elem[data-elem-id="1721222246388"] {
+                        top: 188px;
+                        left: calc(50% - 600px + 4px);
+                        width: 1203px;
+                    }
+
+                    #rec775086638 .tn-elem[data-elem-id="1721222246388"] .tn-atom {
+                        font-size: 18px;
+                    }
                 }
 
                 @media screen and (max-width: 1199px) {
@@ -3337,7 +3459,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     color: #000000;
                     z-index: 4;
                     top: 90px;
-                    left: calc(50% - 600px + 4px);
+                    left: calc(50% - 650px + 14px);
                     width: 952px;
                 }
 
@@ -3350,6 +3472,18 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     background-position: center center;
                     border-color: transparent;
                     border-style: solid;
+                }
+
+                @media screen and (max-width: 1299px) {
+                    #rec775086638 .tn-elem[data-elem-id="1721218532331"] {
+                        top: 90px;
+                        left: calc(50% - 600px + 44px);
+                        width: 952px;
+                    }
+
+                    #rec775086638 .tn-elem[data-elem-id="1721218532331"] .tn-atom {
+                        font-size: 20px;
+                    }
                 }
 
                 @media screen and (max-width: 1199px) {
@@ -3394,8 +3528,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                 #rec775086638 .tn-elem[data-elem-id="1721637696561"] {
                     z-index: 5;
                     top: 75px;
-                    left: calc(50% - 600px + -84px);
-                    width: 1350px;
+                    left: calc(50% - 650px + -25px);
+                    width: 1301px;
                     height: 104px;
                 }
 
@@ -3403,6 +3537,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                     background-position: center center;
                     border-color: transparent;
                     border-style: solid;
+                }
+
+                @media screen and (max-width: 1299px) {
+                    #rec775086638 .tn-elem[data-elem-id="1721637696561"] {
+                        top: 75px;
+                        left: calc(50% - 600px + 0px);
+                        width: 1306px;
+                        height: 104px;
+                    }
                 }
 
                 @media screen and (max-width: 1199px) {
@@ -3436,13 +3579,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                 }
             </style>
             <div class='t396'>
-                <div class="t396__artboard" data-artboard-recid="775086638" data-artboard-screens="320,480,640,960,1200"
-                    data-artboard-height="260" data-artboard-valign="center" data-artboard-upscale="grid"
-                    data-artboard-height-res-320="340" data-artboard-height-res-960="260">
+                <div class="t396__artboard" data-artboard-recid="775086638"
+                    data-artboard-screens="320,480,640,960,1200,1300" data-artboard-height="260"
+                    data-artboard-valign="center" data-artboard-upscale="grid" data-artboard-height-res-320="340"
+                    data-artboard-height-res-960="260" data-artboard-height-res-1200="260">
                     <div class="t396__carrier" data-artboard-recid="775086638"></div>
                     <div class="t396__filter" data-artboard-recid="775086638"></div>
                     <div class='t396__elem tn-elem tn-elem__7750866381721218464192' data-elem-id='1721218464192'
-                        data-elem-type='text' data-field-top-value="-101" data-field-left-value="-62"
+                        data-elem-type='text' data-field-top-value="-101" data-field-left-value="-103"
                         data-field-width-value="1148" data-field-axisy-value="center" data-field-axisx-value="center"
                         data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px"
                         data-field-heightunits-value="" data-field-widthunits-value="px"
@@ -3451,12 +3595,14 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                         data-field-left-res-480-value="0" data-field-width-res-480-value="480"
                         data-field-top-res-640-value="-106" data-field-left-res-640-value="0"
                         data-field-width-res-640-value="640" data-field-top-res-960-value="-106"
-                        data-field-left-res-960-value="0" data-field-width-res-960-value="960">
+                        data-field-left-res-960-value="0" data-field-width-res-960-value="960"
+                        data-field-top-res-1200-value="-101" data-field-left-res-1200-value="-22"
+                        data-field-width-res-1200-value="1148">
                         <h2 class='tn-atom' field='tn_text_1721218464192'>Для клиентов, размещающих нестандартное
                             оборудование, предусмотрены специальные услуги:</h2>
                     </div>
                     <div class='t396__elem tn-elem tn-elem__7750866381721222246388' data-elem-id='1721222246388'
-                        data-elem-type='text' data-field-top-value="188" data-field-left-value="-36"
+                        data-elem-type='text' data-field-top-value="188" data-field-left-value="-27"
                         data-field-width-value="1203" data-field-axisy-value="top" data-field-axisx-value="left"
                         data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px"
                         data-field-heightunits-value="" data-field-widthunits-value="px"
@@ -3464,14 +3610,16 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                         data-field-width-res-320-value="320" data-field-left-res-480-value="0"
                         data-field-width-res-480-value="480" data-field-left-res-640-value="0"
                         data-field-width-res-640-value="640" data-field-top-res-960-value="188"
-                        data-field-left-res-960-value="0" data-field-width-res-960-value="960">
+                        data-field-left-res-960-value="0" data-field-width-res-960-value="960"
+                        data-field-top-res-1200-value="188" data-field-left-res-1200-value="4"
+                        data-field-width-res-1200-value="1203">
                         <h3 class='tn-atom' field='tn_text_1721222246388'>Цены и услуги предоставляются по запросу.
                             Уточнить информацию <br>по e-mail: <a href="mailto:office@okbprogress.ru"
                                 style="color: rgb(0, 126, 167);">office@okbprogress.ru</a> <br>или по телефону: <a
                                 href="tel:74957772342" style="color: rgb(0, 126, 167);">+7 (495) 777-23-42</a></h3>
                     </div>
                     <div class='t396__elem tn-elem tn-elem__7750866381721218532331' data-elem-id='1721218532331'
-                        data-elem-type='text' data-field-top-value="90" data-field-left-value="4"
+                        data-elem-type='text' data-field-top-value="90" data-field-left-value="14"
                         data-field-width-value="952" data-field-axisy-value="top" data-field-axisx-value="left"
                         data-field-container-value="grid" data-field-topunits-value="px" data-field-leftunits-value="px"
                         data-field-heightunits-value="" data-field-widthunits-value="px"
@@ -3480,7 +3628,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                         data-field-left-res-480-value="0" data-field-width-res-480-value="480"
                         data-field-top-res-640-value="80" data-field-left-res-640-value="0"
                         data-field-width-res-640-value="640" data-field-top-res-960-value="90"
-                        data-field-left-res-960-value="0">
+                        data-field-left-res-960-value="0" data-field-top-res-1200-value="90"
+                        data-field-left-res-1200-value="44" data-field-width-res-1200-value="952">
                         <h3 class='tn-atom' field='tn_text_1721218532331'>
                             <ul>
                                 <li data-list="bullet">Размещение оборудования форм-фактора Tower</li>
@@ -3490,8 +3639,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                         </h3>
                     </div>
                     <div class='t396__elem tn-elem tn-elem__7750866381721637696561' data-elem-id='1721637696561'
-                        data-elem-type='shape' data-field-top-value="75" data-field-left-value="-84"
-                        data-field-height-value="104" data-field-width-value="1350" data-field-axisy-value="top"
+                        data-elem-type='shape' data-field-top-value="75" data-field-left-value="-25"
+                        data-field-height-value="104" data-field-width-value="1301" data-field-axisy-value="top"
                         data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="px"
                         data-field-leftunits-value="px" data-field-heightunits-value="px"
                         data-field-widthunits-value="px" data-field-top-res-320-value="118"
@@ -3499,7 +3648,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                         data-field-top-res-480-value="78" data-field-left-res-480-value="0"
                         data-field-width-res-480-value="480" data-field-top-res-640-value="78"
                         data-field-left-res-640-value="-72" data-field-top-res-960-value="78"
-                        data-field-left-res-960-value="-61">
+                        data-field-left-res-960-value="-61" data-field-top-res-1200-value="75"
+                        data-field-left-res-1200-value="0" data-field-height-res-1200-value="104"
+                        data-field-width-res-1200-value="1306">
                         <div class='tn-atom'></div>
                     </div>
                 </div>
@@ -4220,8 +4371,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                             data-field-left-res-640-value="520" data-field-top-res-960-value="112"
                             data-field-left-res-960-value="490" data-field-width-res-960-value="134">
                             <div class='tn-atom' field='tn_text_1475147601290'><a href="contacts.html"
-                                    style="color: rgb(255, 255, 255);">Контакты</a><br>
-                            <a href="licenses.html" style="color: rgb(255, 255, 255);">Лицензии</a></div>
+                                    style="color: rgb(255, 255, 255);">Контакты</a><br><a href="licenses.html"
+                                    style="color: rgb(255, 255, 255);">Лицензии</a></div>
                         </div>
                         <div class='t396__elem tn-elem tn-elem__7063318841475147675390' data-elem-id='1475147675390'
                             data-elem-type='text' data-field-top-value="87" data-field-left-value="850"
@@ -4247,18 +4398,18 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                             data-field-top-res-640-value="193" data-field-left-res-640-value="271"
                             data-field-top-res-960-value="112" data-field-left-res-960-value="670"
                             data-field-width-res-960-value="289">
-                            <div class='tn-atom' field='tn_text_1475147678114'><a href="rekvizity.html" target="_blank"
-                                style="color: rgb(255, 255, 255);">Реквизиты</a><br><a href="policy.html" target="_blank"
-                                style="color: rgb(255, 255, 255);">Политика конфиденциальности</a><br><a
-                                href="files/data//1553070263.0538.jpg"  target="_blank"
-                                style="color: rgb(255, 255, 255);">Заключения СОУТ</a><br><a
-                                href="files/data/rules_telem.pdf" target="_blank"
-                                style="color: rgb(255, 255, 255);">Правила предоставления телематических
-                                услуг</a><br><a href="files/data/rules_tel.pdf" target="_blank"
-                                style="color: rgb(255, 255, 255);">Правила предоставления услуг телефонной
-                                связи</a><br><a href="files/data/rules_data.pdf"target="_blank"
-                                style="color: rgb(255, 255, 255);">Правила предоставления услуг предече данных</a>
-                        </div>
+                            <div class='tn-atom' field='tn_text_1475147678114'><a href="rekvizity.html"
+                                    style="color: rgb(255, 255, 255);">Реквизиты</a><br><a href="policy.html"
+                                    style="color: rgb(255, 255, 255);">Политика конфиденциальности</a><br><a
+                                    href="https://okbprogress.ru/files/storage/1553070263.0538.jpg"
+                                    style="color: rgb(255, 255, 255);">Заключения СОУТ</a><br><a
+                                    href="https://okbprogress.ru/files/storage/rules_telem.pdf"
+                                    style="color: rgb(255, 255, 255);">Правила предоставления телематических
+                                    услуг</a><br><a href="https://okbprogress.ru/files/storage/rules_tel.pdf"
+                                    style="color: rgb(255, 255, 255);">Правила предоставления услуг телефонной
+                                    связи</a><br><a href="https://okbprogress.ru/files/storage/rules_data.pdf"
+                                    style="color: rgb(255, 255, 255);">Правила предоставления услуг предече данных</a>
+                            </div>
                         </div>
                         <div class='t396__elem tn-elem tn-elem__7063318841707991200472' data-elem-id='1707991200472'
                             data-elem-type='text' data-field-top-value="87" data-field-left-value="0"

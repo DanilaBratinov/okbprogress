@@ -734,14 +734,6 @@ img:not([src]) {
     flex-shrink: 0
 }
 
-[data-group-widthmode="hug"] {
-    width: min-content !important
-}
-
-[data-group-heightmode="hug"] {
-    height: initial !important
-}
-
 .uploadcare-dialog.uploadcare-active {
     z-index: 9999999
 }

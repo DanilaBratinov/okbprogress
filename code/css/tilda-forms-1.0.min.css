@@ -363,6 +363,11 @@ fieldset.t-input-group {
     cursor: pointer
 }
 
+.t-checkbox__control.t-checkbox__control_flex {
+    display: flex;
+    align-items: center
+}
+
 .t-checkbox__control .t-checkbox {
     position: absolute;
     z-index: -1;
