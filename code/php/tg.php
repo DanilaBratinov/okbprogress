@@ -1,7 +1,7 @@
 <?php
 
 $error = true;
-$secret = '6LeK3R0qAAAAAOpjXaFV8-L3lHaWA9L0p_UgkVID';
+$secret = '6Lca3h0qAAAAAMBIQj3Pm4cOQuOJwOoBo3pQ0wt0';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -82,7 +82,7 @@ if (!empty($_POST['g-recaptcha-response'])) {
         curl_close($ch);
 
         if ($response) {
-            echo "Сообщение успешно отправлено!";
+            header('Location: ../index.html');
         } else {
             echo "Ошибка отправки сообщения";
         }
