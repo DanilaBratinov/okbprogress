@@ -1919,7 +1919,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                 <div class="t702__title t-title t-title_xxs" id="popuptitle_776683768">Обратная связь
                                 </div>
                             </div>
-                            <form action='php/tg.php' method='POST' data-formactiontype="2" onsubmit="return"><input type="hidden">                                
+                            <form action='php/tg.php' method='POST' data-formactiontype="2" onsubmit="return"><input type="hidden" name="form_id">                                
                                 <div class="js-successbox t-form__successbox t-text t-text_md" aria-live="polite"
                                     style="display:none;"></div>
                                 <div class="t-form__inputsbox t-form__inputsbox_vertical-form t-form__inputsbox_inrow">
@@ -1930,7 +1930,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             >Услуга</label>
                                         <div class="t-input-block "
                                             style="border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
-                                            <div class="t-select__wrapper "><select name="Услуга"
+                                            <div class="t-select__wrapper "><select name="service_id"
                                                     id="input_1721641185896" class="t-select js-tilda-rule "
                                                     data-tilda-req="1" aria-required="true"
                                                     style="color:#000000;border:1px solid #003459;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
@@ -2165,7 +2165,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             >Ваше имя</label>
                                         <div class="t-input-block "
                                             style="border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
-                                            <input type="text" autocomplete="name" name="Имя:" id="input_3237766837680"
+                                            <input type="text" autocomplete="name" name="name_id:" id="input_3237766837680"
                                                 class="t-input js-tilda-rule " value="" data-tilda-req="1"
                                                 aria-required="true" data-tilda-rule="name"
                                                 aria-describedby="error_3237766837680"
@@ -2181,7 +2181,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             >Ваш email</label>
                                         <div class="t-input-block "
                                             style="border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
-                                            <input type="email" autocomplete="email" name="Почта:"
+                                            <input type="email" autocomplete="email" name="mail_id"
                                                 id="input_3237766837681" class="t-input js-tilda-rule " value=""
                                                 data-tilda-rule="email" aria-describedby="error_3237766837681"
                                                 style="color:#000000;border:1px solid #003459;border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
@@ -2196,7 +2196,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             >Ваш телефон</label>
                                         <div class="t-input-block "
                                             style="border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
-                                            <input type="tel" autocomplete="tel" name="Телефон:"
+                                            <input type="tel" autocomplete="tel" name="phone_id"
                                                 id="input_3237766837682" data-phonemask-init="no"
                                                 data-phonemask-id="776697479" data-phonemask-lid="3237766837682"
                                                 data-phonemask-maskcountry="RU"
@@ -2232,7 +2232,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             >Комментарий</label>
                                         <div class="t-input-block "
                                             style="border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;">
-                                            <textarea name="Комментарий" id="input_3237766837683"
+                                            <textarea name="comment_id" id="input_3237766837683"
                                                 class="t-input js-tilda-rule "
                                                 placeholder="Опишите вашу задачу как можно конкретнее"
                                                 aria-describedby="error_3237766837683"

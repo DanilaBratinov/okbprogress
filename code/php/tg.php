@@ -44,7 +44,7 @@ if (!$error) {
         $router = $_POST['checkbox_id'];
         $speed = $_POST['speed_id'];
 
-        $telegramMessage .= "*Новая заявка:*\n\n";
+        $telegramMessage .= "*Новая заявка*\n\n";
 
         if (!empty($service)) {
             $telegramMessage .= "Услуга: " . $service . "\n\n";
@@ -88,55 +88,6 @@ if (!$error) {
             echo "Сообщение успешно отправлено!";
         } else {
             echo "Ошибка отправки сообщения";
-        }
-
-        require 'vendor/autoload.php';
-
-        $mail = new PHPMailer(true);
-
-        try {
-            #$mail->isSMTP();
-            $mail->Host = 'mail.okbprogress.ru';
-            $mail->SMTPAuth = true;
-            $mail->Username = 'bd@okbprogress.ru';
-            $mail->Password = 'jhqi336917';
-
-            $mail->SMTPSecure = 'ssl';
-            $mail->Port = 465;
-
-            $mail->setFrom('bd@okbprogress.ru');
-            $mail->addAddress('office@okbprogress.ru');
-            $mail->CharSet = PHPMailer::CHARSET_UTF8;
-            $mail->SMTPOptions = array(
-                'ssl' => array(
-                    'verify_peer' => false,
-                    'verify_peer_name' => false,
-                    'allow_self_signed' => true
-                )
-            );
-
-            $mail->isHTML(true);
-            $mail->Subject = 'Новая заявка:' . $service;
-            $mail->Body = '
-                <h1>Форма:' . $form . '</h1>
-                <p>Имя: ' . $name . '</p>
-                <p>Почта: ' . $email . '</p>
-                <p>Телефон: ' . $phone . '</p>
-                <p>Кол-во юнитов: ' . $unit . '</p>
-                <p>Суммарная мощность БП ' . $power . 'Вт' . '</p>
-                <p>Кол-во IP: ' . $ip . '</p>
-                <p>Свой маршрутизатор: ' . $router . '</p>
-                <p>Скорость канала: ' . $speed . 'Мб/с' . '</p>
-                ';
-        
-
-            $mail->send();
-            echo 'Message has been sent';
-            header('Location: ../thx.html');
-
-
-        } catch (Exception $e) {
-            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
         }
 }
 
