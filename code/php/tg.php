@@ -1,30 +1,29 @@
 <?php
 
-// $error = true;
-// $secret = '6Lca3h0qAAAAAMBIQj3Pm4cOQuOJwOoBo3pQ0wt0';
+$error = true;
+$secret = '6Lca3h0qAAAAAMBIQj3Pm4cOQuOJwOoBo3pQ0wt0';
 
-// use PHPMailer\PHPMailer\PHPMailer;
-// use PHPMailer\PHPMailer\SMTP;
-// use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
-// if (!empty($_POST['g-recaptcha-response'])) {
-//     $curl = curl_init('https://www.google.com/recaptcha/api/siteverify');
-//     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-//     curl_setopt($curl, CURLOPT_POST, true);
-//     curl_setopt($curl, CURLOPT_POSTFIELDS, 'secret=' . $secret . '&response=' . $_POST['g-recaptcha-response']);
-//     $out = curl_exec($curl);
-//     curl_close($curl);
+if (!empty($_POST['g-recaptcha-response'])) {
+    $curl = curl_init('https://www.google.com/recaptcha/api/siteverify');
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl, CURLOPT_POST, true);
+    curl_setopt($curl, CURLOPT_POSTFIELDS, 'secret=' . $secret . '&response=' . $_POST['g-recaptcha-response']);
+    $out = curl_exec($curl);
+    curl_close($curl);
 
-//     $out = json_decode($out);
-//     if ($out->success == false) {
-//         $error = true;
+    $out = json_decode($out);
+    if ($out->success == false) {
+        $error = true;
 
-//     }
+    }
 
-//     if ($out->success == true) {
-//         $error = false;
-//     }
-// }
+    if ($out->success == true) {
+        $error = false;
+
 
     $botToken = "7206460578:AAEyMW-uWRX-ZCgzTn1ufqHq5eSULkqbVhU";
 
@@ -87,7 +86,8 @@
         } else {
             echo "Ошибка отправки сообщения";
         }
-
+    }
+}
 if ($error) {
     header('Location: ../error.html');
 }
