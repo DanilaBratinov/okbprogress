@@ -26,8 +26,6 @@
 //     }
 // }
 
-
-if (!$error) {
     $botToken = "7206460578:AAEyMW-uWRX-ZCgzTn1ufqHq5eSULkqbVhU";
 
         $botUrl = "https://api.telegram.org/bot" . $botToken . "/sendMessage";
@@ -89,7 +87,6 @@ if (!$error) {
         } else {
             echo "Ошибка отправки сообщения";
         }
-}
 
 if ($error) {
     header('Location: ../error.html');
