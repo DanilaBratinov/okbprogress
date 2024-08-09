@@ -1,7 +1,7 @@
 <?php
 
 $error = true;
-$secret = '6Lca3h0qAAAAAMBIQj3Pm4cOQuOJwOoBo3pQ0wt0';
+$secret = '6LeK3R0qAAAAAOpjXaFV8-L3lHaWA9L0p_UgkVID';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
