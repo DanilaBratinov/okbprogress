@@ -36,9 +36,9 @@
         $email = $_POST['mail_id'];
         $phone = $_POST['phone_id'];
         $message = $_POST['comment_id'];
-        $unit = $_POST['unit'];
-        $power = $_POST['power'];
-        $ip = $_POST['ip'];
+        $unit = $_POST['unit_id'];
+        $power = $_POST['power_id'];
+        $ip = $_POST['ip_id'];
         $router = $_POST['checkbox_id'];
         $speed = $_POST['speed_id'];
 
