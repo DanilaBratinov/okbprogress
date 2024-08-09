@@ -81,6 +81,13 @@
 </head>
 
 <body class="t-body" style="margin:0;"><!--allrecords-->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit(token) {
+          document.getElementById("demo-form").submit();
+        }
+      </script>
+
     <div id="allrecords" data-tilda-export="yes" class="t-records" data-hook="blocks-collection-content-node"
         data-tilda-project-id="8603237" data-tilda-page-id="43725349"
         data-tilda-formskey="6cfecd7dc431405f59ec96e568603237" data-tilda-cookie="no" data-tilda-root-zone="com">
@@ -2047,8 +2054,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#D9003459', en
                                             </ul>
                                         </div><!--/noindex-->
                                     </div>
-                                    <div class="t-form__submit"><button type="submit" class="t-submit"
-                                            style="color:#ffffff;background-color:#003459;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;"
+                                    <div class="t-form__submit">
+                                        <button type="submit" class="t-submit g-recaptcha" data-sitekey="6LeK3R0qAAAAAPDxosm0JOyY3gnpjWXFiQNDhtMR" data-callback='onSubmit' 
+                                        data-action='submit' style="color:#ffffff;background-color:#003459;border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px;"
                                             data-field="buttontitle" data-buttonfieldset="button">Отправить </button>
                                     </div>
                                 </div>
